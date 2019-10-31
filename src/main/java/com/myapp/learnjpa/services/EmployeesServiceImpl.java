@@ -15,7 +15,10 @@ public class EmployeesServiceImpl implements EmployeesService {
 
     @Override
     public List<Employees> getAllEmployees(String firstName) {
-        return employeesRepository.getEmployeesByFirstNameContaining(firstName);
+        if (firstName != null)
+            return employeesRepository.getEmployeesByFirstNameContaining(firstName);
+        else
+            return employeesRepository.findAll();
     }
 
 }

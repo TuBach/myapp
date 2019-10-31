@@ -7939,8 +7939,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 -- Dumping data for table concretepage.users: ~2 rows (approximately)
 INSERT INTO `users` (`username`, `password`, `full_name`, `role`, `country`, `enabled`) VALUES
-	('tubn', '$2a$10$N0eqNiuikWCy9ETQ1rdau.XEELcyEO7kukkfoiNISk/9F7gw6eB0W', 'Mukesh Sharma', 'ROLE_ADMIN', 'VIET NAM', 1),
-	('duclm', '$2a$10$QifQnP.XqXDW0Lc4hSqEg.GhTqZHoN2Y52/hoWr4I5ePxK7D2Pi8q', 'Tarun Singh', 'ROLE_USER', 'VIET NAM', 1);
+	('tubn', '$2a$10$N0eqNiuikWCy9ETQ1rdau.XEELcyEO7kukkfoiNISk/9F7gw6eB0W', 'Mukesh Sharma pass m123', 'ROLE_ADMIN', 'VIET NAM', 1),
+	('duclm', '$2a$10$QifQnP.XqXDW0Lc4hSqEg.GhTqZHoN2Y52/hoWr4I5ePxK7D2Pi8q', 'Tarun Singh pass t123', 'ROLE_USER', 'VIET NAM', 1);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

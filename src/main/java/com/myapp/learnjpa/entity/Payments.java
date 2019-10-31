@@ -1,5 +1,8 @@
 package com.myapp.learnjpa.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,6 +11,8 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "payments")
+@Getter
+@Setter
 public class Payments implements Serializable {
 
     @Id
@@ -20,41 +25,5 @@ public class Payments implements Serializable {
     private java.sql.Date paymentDate;
     @Column(name = "amount")
     private double amount;
-
-
-    public long getCustomerNumber() {
-        return customerNumber;
-    }
-
-    public void setCustomerNumber(long customerNumber) {
-        this.customerNumber = customerNumber;
-    }
-
-
-    public String getCheckNumber() {
-        return checkNumber;
-    }
-
-    public void setCheckNumber(String checkNumber) {
-        this.checkNumber = checkNumber;
-    }
-
-
-    public java.sql.Date getPaymentDate() {
-        return paymentDate;
-    }
-
-    public void setPaymentDate(java.sql.Date paymentDate) {
-        this.paymentDate = paymentDate;
-    }
-
-
-    public double getAmount() {
-        return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
 
 }

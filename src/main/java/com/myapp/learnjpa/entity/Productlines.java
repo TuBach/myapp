@@ -1,5 +1,8 @@
 package com.myapp.learnjpa.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,6 +11,8 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "productlines")
+@Getter
+@Setter
 public class Productlines implements Serializable {
 
     @Id
@@ -19,41 +24,5 @@ public class Productlines implements Serializable {
     private String htmlDescription;
     @Column(name = "image")
     private String image;
-
-
-    public String getProductLine() {
-        return productLine;
-    }
-
-    public void setProductLine(String productLine) {
-        this.productLine = productLine;
-    }
-
-
-    public String getTextDescription() {
-        return textDescription;
-    }
-
-    public void setTextDescription(String textDescription) {
-        this.textDescription = textDescription;
-    }
-
-
-    public String getHtmlDescription() {
-        return htmlDescription;
-    }
-
-    public void setHtmlDescription(String htmlDescription) {
-        this.htmlDescription = htmlDescription;
-    }
-
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 
 }
